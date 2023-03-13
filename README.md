@@ -20,46 +20,38 @@ If you're developing a large system that has complexity at the heart, then the u
 
 # Project structure
 
-Entity
-Value Objects
-Aggregate
-Domain Services
-Repository
-Domain Events
-Modules
-
 <b>src</b><br />
 &nbsp; | <b>domain</b><br />
 &nbsp;&nbsp; || <b>@shared</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>event</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>repository</b><br />
+&nbsp;&nbsp;&nbsp; ||| event<br />
+&nbsp;&nbsp;&nbsp; ||| repository<br />
 
 &nbsp;&nbsp; || <b>checkout</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>entity</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>factory</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>repository</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>service</b><br />
+&nbsp;&nbsp;&nbsp; ||| entity<br />
+&nbsp;&nbsp;&nbsp; ||| factory<br />
+&nbsp;&nbsp;&nbsp; ||| repository<br />
+&nbsp;&nbsp;&nbsp; ||| service<br />
 
 &nbsp;&nbsp; || <b>customer</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>entity</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>factory</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>repository</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>value-object</b><br />
+&nbsp;&nbsp;&nbsp; ||| entity<br />
+&nbsp;&nbsp;&nbsp; ||| factory<br />
+&nbsp;&nbsp;&nbsp; ||| repository<br />
+&nbsp;&nbsp;&nbsp; ||| value-object<br />
 
 &nbsp;&nbsp; || <b>product</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>entity</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>event</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>factory</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>repository</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>service</b><br />
+&nbsp;&nbsp;&nbsp; ||| entity<br />
+&nbsp;&nbsp;&nbsp; ||| event<br />
+&nbsp;&nbsp;&nbsp; ||| factory<br />
+&nbsp;&nbsp;&nbsp; ||| repository<br />
+&nbsp;&nbsp;&nbsp; ||| service<br />
 
 &nbsp; | <b>infra</b><br />
 &nbsp;&nbsp; || <b>customer</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>repository/sequelize</b><br />
+&nbsp;&nbsp;&nbsp; ||| repository/sequelize<br />
 &nbsp;&nbsp; || <b>order</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>repository/sequelize</b><br />
+&nbsp;&nbsp;&nbsp; ||| repository/sequelize<br />
 &nbsp;&nbsp; || <b>product</b><br />
-&nbsp;&nbsp;&nbsp; ||| <b>repository/sequelize</b><br />
+&nbsp;&nbsp;&nbsp; ||| repository/sequelize<br />
 
 # Useful project commands
 Installing typescript
